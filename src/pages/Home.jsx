@@ -65,9 +65,10 @@ function Home() {
           <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <Card
               image={imgCard}
-              title="Servicio Dominical"
-              subtitle="Domingos a las 10:00 AM"
-              description="Únete a nosotros para alabanza, adoración y un mensaje inspirador de la Palabra de Dios."
+              title="Reunión de Oración"
+              subtitle="Miércoles a las 7:00 PM"
+              description="Únete a nosotros para un tiempo de oración y comunión con Dios."
+             
             />
 
             <Card
