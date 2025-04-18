@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import backgroundVideo from "../assets/video/video.mp4";
-import imgCard from "../assets/images/principal.jpg";
+import imgCard from "../assets/images/reunionDom.jpg";
+import imgCard2 from "../assets/images/principalDos.jpg";
+import imgCard3 from "../assets/images/reunion.webp";
 import Card from "../components/Card";
+
 
 function Home() {
   // Forzar actualización de renderizado
@@ -36,8 +39,7 @@ function Home() {
             <Link
               to="/about"
               className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300 text-center"
-            >
-              Conócenos
+            >Conócenos
             </Link>
             <Link
               to="/events"
@@ -63,40 +65,35 @@ function Home() {
           </div>
           {/* card services */}
           <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+            
+          <Card
+              image={imgCard3}
+              title="Cuarto de Oración"
+              subtitle="Domingos a las 9:30hs"
+              description="Un espacio para alinear tu corazón con el plan de Dios a través de la oración."
+            />
+
             <Card
-              image={imgCard}
+              image={imgCard2}
               title="Reunión de Oración"
-              subtitle="Miércoles a las 7:00 PM"
+              subtitle="Miércoles a las 19:00hs"
               description="Únete a nosotros para un tiempo de oración y comunión con Dios."
              
             />
 
             <Card
               image={imgCard}
-              title="Servicio Dominical"
-              subtitle="Domingos a las 10:00 AM"
+              title="Reunión Central"
+              subtitle="Domingos a las 10:30hs"
               description="Únete a nosotros para alabanza, adoración y un mensaje inspirador de la Palabra de Dios."
             />
 
-            <Card
-              image={imgCard}
-              title="Servicio Dominical"
-              subtitle="Domingos a las 10:00 AM"
-              description="Únete a nosotros para alabanza, adoración y un mensaje inspirador de la Palabra de Dios."
-            />
-
-            <Card
-              image={imgCard}
-              title="Servicio Dominical"
-              subtitle="Domingos a las 10:00 AM"
-              description="Únete a nosotros para alabanza, adoración y un mensaje inspirador de la Palabra de Dios."
-            />
           </div>
         </div>
       </section>
 
       {/* Upcoming Events Preview */}
-      <section className="py-16">
+      <section className="py-16 bg-slate-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
