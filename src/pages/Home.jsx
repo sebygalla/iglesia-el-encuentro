@@ -1,10 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import backgroundVideo from "../assets/video/video.mp4";
 import imgCard from "../assets/images/reunionDom.jpg";
 import imgCard2 from "../assets/images/principalDos.jpg";
 import imgCard3 from "../assets/images/reunion.webp";
 import Card from "../components/Card";
+
 
 
 function Home() {
@@ -51,8 +51,9 @@ function Home() {
         </div>
       </section>
 
+ 
       {/* Services Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-gray-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
@@ -199,13 +200,12 @@ function Home() {
                   M
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-semibold">María González</h4>
+                  <h4 className="font-semibold">Yani y Matias</h4>
                   <p className="text-gray-600 text-sm">Miembro desde 2020</p>
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "Encontré en esta iglesia una verdadera familia. El amor y apoyo
-                que he recibido ha transformado mi vida completamente."
+                "Yanina y Matías enfrentaron temores de infertilidad por un quiste y SOP. Milagrosamente, el quiste disminuyó y una palabra profética les dio esperanza. Hoy disfrutan a su hijo Benjamín, testimonio de la fidelidad de Dios."
               </p>
             </div>
 
@@ -220,9 +220,7 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "Los mensajes dominicales siempre son relevantes y prácticos. He
-                crecido espiritualmente de manera significativa desde que asisto
-                a esta iglesia."
+                "En el Ministerio de Evangelismo, Sergio experimentó el respaldo de Dios y aprendió que evangelizar es para todos, basado en el testimonio personal y buscando un encuentro genuino con Dios, reflejando su amor y compasión."
               </p>
             </div>
 
@@ -237,9 +235,7 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "El grupo de jóvenes ha sido una bendición para mis hijos. Han
-                encontrado amigos con valores similares y mentores que los
-                guían."
+                "La infancia de Martín fue un escape del abuso, hallando paz en la iglesia. De adulto, se perdió, pero al volver a la iglesia, esa paz regresó. Hoy, rendido a Dios, reconoce su propósito y su constante fidelidad."
               </p>
             </div>
           </div>

@@ -3,7 +3,7 @@ const Card = ({ image, title, subtitle, description }) => {
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white relative">
       {/* Imagen con sombra negra degradada */}
       <div className="relative">
-        <img className="w-full h-48 object-cover" src={image} alt={title} />
+        <img className="w-full h-48 object-cover object-[25%_30%]" src={image} alt={title} />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
       </div>
 
