@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import backgroundVideo from "../assets/video/video.mp4";
-import imgCard from "../assets/images/reunionDom.jpg";
-import imgCard2 from "../assets/images/principalDos.jpg";
-import imgCard3 from "../assets/images/reunion.webp";
+import imgCard from "../assets/images/domingo.jpg";
+import imgCard2 from "../assets/images/miercoles.jpg";
 import Card from "../components/Card";
 
 
@@ -53,39 +52,34 @@ function Home() {
 
  
       {/* Services Section */}
-      <section className="py-16 bg-gray-300">
+      <section className="py-16 bg-slate-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
               Nuestros Servicios
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
               Te invitamos a ser parte de nuestra comunidad y participar en
               nuestros servicios semanales.
             </p>
           </div>
           {/* card services */}
-          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8">
             
-          <Card
-              image={imgCard3}
-              title="Cuarto de Oración"
-              subtitle="Domingos a las 9:30hs"
-              description="Un espacio para alinear tu corazón con el plan de Dios a través de la oración."
-            />
+      
 
             <Card
               image={imgCard2}
-              title="Reunión de Oración"
-              subtitle="Miércoles a las 19:00hs"
+              title="REUNION DE ORACIÓN"
+              subtitle="MIERCOLES 7:00 pm"
               description="Únete a nosotros para un tiempo de oración y comunión con Dios."
              
             />
 
             <Card
               image={imgCard}
-              title="Reunión Central"
-              subtitle="Domingos a las 10:30hs"
+              title="REUNION CENTRAL"
+              subtitle="DOMINGO 10:30 am"
               description="Únete a nosotros para alabanza, adoración y un mensaje inspirador de la Palabra de Dios."
             />
 
