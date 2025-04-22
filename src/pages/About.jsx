@@ -2,13 +2,16 @@ import img from "../assets/images/principal.jpg";
 import imagen from "../assets/images/javier.png";
 import pastores from "../assets/images/principalDos.jpg";
 
+import pastorDesktop from "../assets/images/pastorDesktop.webp";
+import pastorMobile from "../assets/images/pastorMobile.webp";
+
 function About() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className=" text-white">
-        <img className="relative" src={pastores} alt="" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center absolute top-[28%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">	
+      <section className=" text-white relative">
+        <img className="w-full max-h-[100vh] object-cover relative" src={pastorDesktop} alt="" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">	
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             Quiénes Somos
           </h1>
@@ -20,7 +23,7 @@ function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-[60px] md:py-[800px] bg-slate-300">
+      <section className="py-[60px] md:py-[100px] bg-slate-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
