@@ -9,10 +9,20 @@ function About() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className=" text-white relative">
-        <img className="w-full max-h-[100vh] object-cover relative" src={pastorDesktop} alt="" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">	
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
+      <section className="text-gray-300 relative">
+        <picture>
+          {/* Imagen para pantallas grandes (desktop) */}
+          <source srcSet={pastorDesktop} media="(min-width: 768px)" />
+          {/* Imagen para pantallas pequeñas (mobile) */}
+          <img
+            className="w-full max-h-[100vh] object-cover relative"
+            src={pastorMobile}
+            alt="Pastor"
+          />
+        </picture>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center absolute top-[58%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <h1 className="text-8xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
             Quiénes Somos
           </h1>
           <p className="text-sm sm:text-xl max-w-3xl mx-auto">
