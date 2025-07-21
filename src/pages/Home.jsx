@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import backgroundVideo from "../assets/video/video.mp4";
-import imgCard from "../assets/images/domingo.jpg";
+import imgCard from "../assets/images/reunionDom.jpg";
 import imgCard2 from "../assets/images/miercoles.jpg";
+import imgCard3 from "../assets/images/banner.webp";
 import Card from "../components/Card";
-
 
 
 function Home() {
@@ -38,7 +38,8 @@ function Home() {
             <Link
               to="/about"
               className="bg-white text-blue-900 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300 text-center"
-            >Conócenos
+            >
+              Conócenos
             </Link>
             <Link
               to="/events"
@@ -50,9 +51,8 @@ function Home() {
         </div>
       </section>
 
- 
       {/* Services Section */}
-      <section className="py-16 bg-slate-400">
+      <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
@@ -64,16 +64,19 @@ function Home() {
             </p>
           </div>
           {/* card services */}
-          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-2 gap-6 md:gap-8">
-            
-      
-
+          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-2">
             <Card
+              image={imgCard3}
+              title="CUARTO DE ORACIÓN"
+              subtitle="ULTIMO VIERNES DEL MES 19:00 hs"
+              description="Únete a nosotros para un tiempo de oración y comunión con Dios."
+            />
+
+               <Card
               image={imgCard2}
               title="REUNION DE ORACIÓN"
               subtitle="MIERCOLES 7:00 pm"
               description="Únete a nosotros para un tiempo de oración y comunión con Dios."
-             
             />
 
             <Card
@@ -82,12 +85,12 @@ function Home() {
               subtitle="DOMINGO 10:30 am"
               description="Únete a nosotros para alabanza, adoración y un mensaje inspirador de la Palabra de Dios."
             />
-
           </div>
         </div>
       </section>
 
       {/* Upcoming Events Preview */}
+   
       <section className="py-16 bg-slate-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -199,7 +202,10 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "Yanina y Matías enfrentaron temores de infertilidad por un quiste y SOP. Milagrosamente, el quiste disminuyó y una palabra profética les dio esperanza. Hoy disfrutan a su hijo Benjamín, testimonio de la fidelidad de Dios."
+                "Yanina y Matías enfrentaron temores de infertilidad por un
+                quiste y SOP. Milagrosamente, el quiste disminuyó y una palabra
+                profética les dio esperanza. Hoy disfrutan a su hijo Benjamín,
+                testimonio de la fidelidad de Dios."
               </p>
             </div>
 
@@ -214,7 +220,10 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "En el Ministerio de Evangelismo, Sergio experimentó el respaldo de Dios y aprendió que evangelizar es para todos, basado en el testimonio personal y buscando un encuentro genuino con Dios, reflejando su amor y compasión."
+                "En el Ministerio de Evangelismo, Sergio experimentó el respaldo
+                de Dios y aprendió que evangelizar es para todos, basado en el
+                testimonio personal y buscando un encuentro genuino con Dios,
+                reflejando su amor y compasión."
               </p>
             </div>
 
@@ -229,7 +238,10 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 italic">
-                "La infancia de Martín fue un escape del abuso, hallando paz en la iglesia. De adulto, se perdió, pero al volver a la iglesia, esa paz regresó. Hoy, rendido a Dios, reconoce su propósito y su constante fidelidad."
+                "La infancia de Martín fue un escape del abuso, hallando paz en
+                la iglesia. De adulto, se perdió, pero al volver a la iglesia,
+                esa paz regresó. Hoy, rendido a Dios, reconoce su propósito y su
+                constante fidelidad."
               </p>
             </div>
           </div>
