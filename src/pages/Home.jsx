@@ -3,8 +3,8 @@ import backgroundVideo from "../assets/video/video.mp4";
 import imgCard from "../assets/images/reunionDom.jpg";
 import imgCard2 from "../assets/images/miercoles.jpg";
 import imgCard3 from "../assets/images/banner.webp";
+import imgCard4 from "../assets/images/pastorJorge.png";  
 import Card from "../components/Card";
-
 
 function Home() {
   // Forzar actualización de renderizado
@@ -51,6 +51,32 @@ function Home() {
         </div>
       </section>
 
+      {/* REHMA Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
+              Palabra Rhema 2025
+            </h2>
+          </div>
+          {/* card rehma */}
+          <div className="grid place-items-center  bg-blue-900 rounded-lg p-6 ">
+         
+            <p className="text-base sm:text-xl text-white max-w-3xl mx-auto">
+              “Porque el Señor aborrece al perverso, pero al íntegro le brinda
+              su amistad.” Proverbios 3:32 (NVI)
+            </p>
+
+            <img className="w-12 h-12 rounded-full border-2 sm:w-20 sm:h-20 border-white shadow-lg object-cover"
+            src={imgCard4} // Cambia la ruta por tu avatar
+            alt="Avatar Rhema"
+     
+    />
+            
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +98,7 @@ function Home() {
               description="Únete a nosotros para un tiempo de oración y comunión con Dios."
             />
 
-               <Card
+            <Card
               image={imgCard2}
               title="REUNION DE ORACIÓN"
               subtitle="MIERCOLES 7:00 pm"
@@ -90,7 +116,7 @@ function Home() {
       </section>
 
       {/* Upcoming Events Preview */}
-   
+
       <section className="py-16 bg-slate-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
