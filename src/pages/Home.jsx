@@ -52,22 +52,22 @@ function Home() {
       </section>
 
       {/* REHMA Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-36 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
+          <div className="text-center mb-28">
+            <h2 className="text-2xl sm:text-6xl font-bold text-slate-900 mb-4">
               Palabra Rhema 2025
             </h2>
           </div>
           {/* card rehma */}
-          <div className="grid place-items-center  bg-blue-900 rounded-lg p-6 ">
+          <div className="grid place-items-center  bg-blue-900 rounded-lg p-10  shadow-lg hover:scale-95 transition-transform duration-300">
          
-            <p className="text-base sm:text-xl text-white max-w-3xl mx-auto">
+            <p className="text-base sm:text-3xl text-white mx-auto">
               “Porque el Señor aborrece al perverso, pero al íntegro le brinda
-              su amistad.” Proverbios 3:32 (NVI)
+              su amistad.” <br /> Proverbios 3:32 (NVI)
             </p>
 
-            <img className="w-12 h-12 rounded-full border-2 sm:w-20 sm:h-20 border-white shadow-lg object-cover"
+            <img className="w-10 h-10 rounded-full border-2 sm:w-20 sm:h-20 border-white shadow-lg object-cover sm:mt-20 mt-10"
             src={imgCard4} // Cambia la ruta por tu avatar
             alt="Avatar Rhema"
      
